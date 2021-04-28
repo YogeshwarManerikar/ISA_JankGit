@@ -11,7 +11,7 @@ public class Triangle implements Shape{
 		this.height = 0;
 	}
 	
-	public Triangle(double base,double height){			//constructor
+	public Triangle(double base,double height){			//""""constructor
 		this.base = base;
 		this.height = height;
 	}
@@ -21,11 +21,13 @@ public class Triangle implements Shape{
 	      System.out.println("Drawing Triangle");
 	}
 	
-	public double calculateArea() {						//method to calculate Area
+	public double calculateArea() {						
+		//method to calculate Area
 		return 0.5*this.base*this.height;
 	}
 	
-	public Shape getClone() {							//method to clone an object
+	public Shape getClone() {							
+		// To do method to clone an object
 		return new Triangle(this.base,this.height);
 	}
 	

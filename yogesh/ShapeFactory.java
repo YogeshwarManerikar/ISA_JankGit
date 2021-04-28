@@ -17,9 +17,7 @@ public class ShapeFactory {
 				shape = new Rectangle(10,4);
 				break;
 				
-			case SQUARE:
-				shape = new Square(6);
-				break;
+			
 				
 			case TRIANGLE:
 				shape = new Triangle(6,4);

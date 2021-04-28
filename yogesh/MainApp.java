@@ -12,10 +12,9 @@ public static void main(String args[]) {
 				
 		System.out.println(" Enter the Shape you want to draw and calculate area ");
         System.out.println("1) Rectangle");
-        System.out.println("2) Square ");
-        System.out.println("3) Circle ");
-        System.out.println("4) Triangle");
-        System.out.println("5) Exit ");
+        System.out.println("2) Circle ");
+        System.out.println("3) Triangle");
+        System.out.println("4) Exit ");
    
         int choice = s.nextInt();
 		
@@ -31,17 +30,9 @@ public static void main(String args[]) {
         		System.out.println("Area of Rectangle is "+rectangle2.calculateArea());
         		break;
         	
+        	
+        		
         	case 2:
-        		Shape square = shapefactory.getInstance(ShapeType.SQUARE);
-        		square.draw();
-        		System.out.println("Area of Square is "+square.calculateArea());
-        		
-        		Shape square2 = square.getClone();
-        		square2.draw();
-        		System.out.println("Area of Square is "+square2.calculateArea());
-        		break;
-        		
-        	case 3:
         		Shape circle = shapefactory.getInstance(ShapeType.CIRCLE);
         		circle.draw();
         		System.out.println("Area of Circle is "+circle.calculateArea());
@@ -51,7 +42,7 @@ public static void main(String args[]) {
         		System.out.println("Area of Circle is "+circle2.calculateArea());
         		break;
         			
-        	case 4:
+        	case 3:
         		Shape triangle = shapefactory.getInstance(ShapeType.TRIANGLE);
         		triangle.draw();
         		System.out.println("Area of Triangle is "+triangle.calculateArea());
@@ -61,7 +52,7 @@ public static void main(String args[]) {
         		System.out.println("Area of Triangle is "+triangle2.calculateArea());
         		break;
         		
-        	case 5:
+        	case 4:
         		break;
         	
         	default:
