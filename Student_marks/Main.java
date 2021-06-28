@@ -12,6 +12,7 @@ public class Main {
 	{
 	//this is the first table 
 	Student_info s1 = new Student_info();
+	Student_info s2 = new Student_info();
 	s1.setName("Yogeshwar");
 	s1.setCourse("MCA");
 		// secound 
@@ -24,8 +25,8 @@ public class Main {
       //Join
 	//r1.setStudent(s1);
 	
-	s1.setName("Salman");
-	s1.setCourse("MCA");
+	s2.setName("Salman");
+	s2.setCourse("MCA");
 		// secound 
 	Student_result r2 = new Student_result();
 	r2.setCoa(47);
@@ -41,6 +42,8 @@ public class Main {
 
 	session.save(s1);
 	session.save(r1);
+	session.save(s2);
+	session.save(r2);
 
 
 	session.getTransaction().commit();
